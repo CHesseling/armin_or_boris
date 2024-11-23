@@ -183,18 +183,7 @@
             if (window.location.protocol === 'file:') {
                 document.body.innerHTML = `
                     <div class="error-message">
-                        <h2>Fehler: Lokaler Webserver erforderlich</h2>
-                        <p>Diese Anwendung kann nicht direkt von der Festplatte geöffnet werden. Sie benötigt einen Webserver.</p>
-                        <p>Schnelle Lösung mit Python:</p>
-                        <div class="code-block">
-                        # Python 3
-                        python -m http.server 8000
                         
-                        # oder Python 2
-                        python -m SimpleHTTPServer 8000</div>
-                        <p>Dann öffnen Sie im Browser:</p>
-                        <div class="code-block">http://localhost:8000</div>
-                        <p>Alternativ können Sie auch einen anderen Webserver wie nginx oder Apache verwenden.</p>
                     </div>
                 `;
             } else {
