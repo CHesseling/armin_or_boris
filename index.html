@@ -40,11 +40,13 @@
             
         }
         .example img {
-            max-width: 100%;
-            height: 300px;
-            border-radius: 4px;
-            margin-bottom: 10px;
-        }
+    max-width: 100%;
+    height: auto;        // Änderung: 'height: 300px' zu 'height: auto'
+    max-height: 300px;   // Neu: maximale Höhe begrenzen
+    object-fit: contain; // Neu: behält Proportionen bei
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
         .caption {
             font-size: 0.8em;
             color: #666;
@@ -145,12 +147,12 @@
 
         <div class="examples">
             <div class="example">
-                <img src="378px-Armin_Laschet_2023_(cropped).jpg" alt="Armin Laschet" height="300" />
+                <img src="378px-Armin_Laschet_2023_(cropped).jpg" alt="Armin Laschet"  />
                 <div>Armin Laschet</div>
                 <div class="caption">Foto: Raimond Spekking, CC BY-SA 4.0</div>
             </div>
             <div class="example">
-                <img src="352px-Boris_Pistorius_(2019)_(cropped).jpg" alt="Boris Pistorius" height="300" />
+                <img src="352px-Boris_Pistorius_(2019)_(cropped).jpg" alt="Boris Pistorius"  />
                 <div>Boris Pistorius</div>
                 <div class="caption">Foto: Daniel Biskup, CC BY-SA 3.0</div>
             </div>
